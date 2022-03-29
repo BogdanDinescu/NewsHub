@@ -1,30 +1,30 @@
 import "./Navbar.css";
+import React from "react";
+import ScrollSpy from 'react-scrollspy-navigation';
+
+
+const LinkButton = React.forwardRef(({ href, text }, ref) => (
+    <a ref={ref} href={href} className="nav-link" aria-current="page">
+      {text}
+    </a>
+  ));
 
 function Navbar() {
     return(
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">NewsHub</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav id="navbar" className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a className="navbar-brand" href="#">NewsHub</a>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                    </li>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav">
+                <ScrollSpy>
+                        <LinkButton href="#home" text="Home" ref={React.createRef()} />
+                        <LinkButton href="#features" text="Features" ref={React.createRef()} />
+                        <LinkButton href="#pricing" text="Pricing" ref={React.createRef()} />
+                </ScrollSpy>
                 </ul>
                 </div>
-            </div>
         </nav>
     );
 }
