@@ -1,3 +1,7 @@
+import './Body.css';
+import Contact from '../Contact/Contact';
+import Reviews from '../Reviews/Reviews';
+import Pricing from '../Pricing/Pricing';
 import { Parallax, Background } from 'react-parallax';
 import logo from '../images/logo512.png'
 import citynight from '../images/citynight.jpg'
@@ -27,10 +31,27 @@ function Body() {
             </Parallax>
         </div>
         <div id="pricing">
+            <Parallax>
+                <Pricing/>
+            </Parallax>
+        </div>
+        <div id="reviews">
+            <Parallax>
+                <Reviews/>
+            </Parallax>
+        </div>
+        <div id="team"></div>
+        <div id="contact">
+            <Parallax>
+               <Contact/>
+            </Parallax>
+        </div>
+        <div id="footer">
             <Parallax
                 strength={200}
             >
                 <img src={logo}/>
+                <p>Copyright ©2022</p>
             </Parallax>
         </div>
       </div>

@@ -1,0 +1,22 @@
+.blue-heading {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: #0066cc;
+    font-size: 25px;
+}
+
+.blue {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #0066cc;
+    font-weight: bold;
+    display: inline;
+}
+
+.nolink {
+    text-decoration: none;
+    color: white;
+}
+
+.nolink:hover, .nolink:active {
+    color: #0281ff;
+}
