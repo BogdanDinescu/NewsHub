@@ -3,6 +3,7 @@ import star from '../images/star.png'
 
 function Reviews() {
     return (
+        <div style={{marginTop: "200px"}}>
         <Slider renderControls={(next, previous) => [
             <button className="btn btn-primary mx-2" onClick={previous}>Previous</button>,
             <button className="btn btn-primary mx-2" onClick={next}>Next</button>
@@ -42,6 +43,7 @@ function Reviews() {
                 <p><i>Cel mai bun mod de a îți începe ziua</i></p>
             </div>
         </Slider>
+        </div>
     );
 }
 

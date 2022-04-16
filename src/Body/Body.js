@@ -7,7 +7,9 @@ import { Parallax, Background } from 'react-parallax';
 import logo from '../images/logo512.png'
 import citynight from '../images/citynight.jpg'
 import newspappers from '../images/newspappers.jpg'
-
+import coin from '../images/coin.jpg'
+import darktexture from '../images/darktexture.jpg'
+import keyboard from '../images/keyboard.jpg'
 
 function Body() {
     return (
@@ -26,23 +28,37 @@ function Body() {
             <Parallax
                 bgImage={newspappers}
                 strength={200}
+                style={{height: "1000px"}}
             >
                 <Features/>
             </Parallax>
         </div>
         <div id="pricing">
-            <Parallax>
+            <Parallax
+                bgImage={coin}
+                strength={300}
+                style={{height: "1000px"}}
+            >
                 <Pricing/>
             </Parallax>
         </div>
         <div id="reviews">
-            <Parallax>
+            <Parallax
+                bgImage={darktexture}
+                strength={200}
+                style={{height: "1000px"}}
+            >
                 <Reviews/>
             </Parallax>
         </div>
         <div id="team"></div>
         <div id="contact">
-            <Parallax>
+            <Parallax
+                bgImage={keyboard}
+                blur={{ min: -3, max: 4}}
+                strength={200}
+                style={{height: "1000px"}}
+            >
                <Contact/>
             </Parallax>
         </div>
@@ -50,7 +66,7 @@ function Body() {
             <Parallax
                 strength={200}
             >
-                <img src={logo} style={{height: "100px"}}/>
+                <img src={logo} style={{height: "200px", margin: "40px"}}/>
                 <p>Copyright ©2022</p>
             </Parallax>
         </div>

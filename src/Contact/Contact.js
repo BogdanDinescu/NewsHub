@@ -1,6 +1,6 @@
 function Contact() {
     return (
-    <div className="row p-5">
+    <div className="row p-5" style={{marginTop: "200px"}}>
         <div className="col-md-6 col-12">
             <h2 className="blue-heading">Get in touch with us!</h2>
             <span>
