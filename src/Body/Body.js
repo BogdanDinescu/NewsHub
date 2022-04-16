@@ -2,6 +2,7 @@ import './Body.css';
 import Contact from '../Contact/Contact';
 import Reviews from '../Reviews/Reviews';
 import Pricing from '../Pricing/Pricing';
+import Features from '../Features/Features';
 import { Parallax, Background } from 'react-parallax';
 import logo from '../images/logo512.png'
 import citynight from '../images/citynight.jpg'
@@ -25,9 +26,8 @@ function Body() {
             <Parallax
                 bgImage={newspappers}
                 strength={200}
-                style={{height: 1000}}
             >
-                <h1 style={{marginTop: '250px'}}>Tired of ads?</h1>
+                <Features/>
             </Parallax>
         </div>
         <div id="pricing">
@@ -50,7 +50,7 @@ function Body() {
             <Parallax
                 strength={200}
             >
-                <img src={logo}/>
+                <img src={logo} style={{height: "100px"}}/>
                 <p>Copyright ©2022</p>
             </Parallax>
         </div>
