@@ -24,6 +24,7 @@ function Navbar() {
                         <LinkButton href="#pricing" text="Pricing" ref={React.createRef()} />
                         <LinkButton href="#reviews" text="Reviews" ref={React.createRef()} />
                         <LinkButton href="#team" text="Team" ref={React.createRef()} />
+                        <LinkButton href="#publisher" text="Publisher" ref={React.createRef()} />
                         <LinkButton href="#contact" text="Contact" ref={React.createRef()} />
                 </ScrollSpy>
                 </ul>

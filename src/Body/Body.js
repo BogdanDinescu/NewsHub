@@ -3,6 +3,7 @@ import Contact from '../Contact/Contact';
 import Reviews from '../Reviews/Reviews';
 import Pricing from '../Pricing/Pricing';
 import Features from '../Features/Features';
+import Publisher from '../Publisher/Publisher';
 import { Parallax, Background } from 'react-parallax';
 import logo from '../images/logo512.png'
 import citynight from '../images/citynight.jpg'
@@ -10,6 +11,7 @@ import newspappers from '../images/newspappers.jpg'
 import coin from '../images/coin.jpg'
 import darktexture from '../images/darktexture.jpg'
 import keyboard from '../images/keyboard.jpg'
+import writer from '../images/writer.jpg'
 
 function Body() {
     return (
@@ -52,6 +54,15 @@ function Body() {
             </Parallax>
         </div>
         <div id="team"></div>
+        <div id="publisher">
+            <Parallax
+                bgImage={writer}
+                strength={200}
+                style={{height: "1000px"}}
+            >
+               <Publisher/>
+            </Parallax>
+        </div>
         <div id="contact">
             <Parallax
                 bgImage={keyboard}
