@@ -20,7 +20,7 @@ function Pricing() {
             <div className="card text-center text-dark border-primary col-md-3 mx-2">
                 <div className="card-header blue-heading">
                     <h3 className="card-title text-success">PREMIUM</h3>
-                    <p>4$/month</p>
+                    <p>5$/month</p>
                 </div>
                 <ul className="card-body list-group-flush ">
                     <li className="list-group-item">No ads</li>
